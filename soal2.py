@@ -1,12 +1,17 @@
-teks = input("Masukkan kata atau kalimat: ")
+def soal2():
+    teks = input("Masukkan kata atau kalimat: ")
 
-teks = teks.lower()
+    teks = teks.lower()
 
-teks = teks.replace(" ", "")
+    teks = teks.replace(" ", "")
 
-reverse = teks[::-1]
+    reverse = teks[::-1]
 
-if (teks == reverse):
-    print("eureeka!")
-else:
-    print("suka blyat")
+    if (teks == reverse):
+        return "eureeka!"
+    else:
+        return "suka blyat"
+
+
+hasil = soal2()
+print(hasil)
