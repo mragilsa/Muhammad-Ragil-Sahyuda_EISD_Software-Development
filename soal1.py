@@ -13,6 +13,8 @@ def hitung_rating():
     if avg_rating.is_integer():
         avg_rating = int(avg_rating)
     
-    print(f"{min_rating}, {max_rating}, {avg_rating}")
+    return min_rating, max_rating, avg_rating
 
-hitung_rating()
+hasil = hitung_rating()
+
+print(hasil)
