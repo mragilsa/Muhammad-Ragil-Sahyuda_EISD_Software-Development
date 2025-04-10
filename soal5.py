@@ -8,13 +8,9 @@ max_length = 6
 
 def hitung_kombinasi(nama, max_length):
     jumlah = 0
-    panjang_nama = len(nama)
-
-    for panjang in range(1, max_length + 1):
-        kombinasi = 1
-        for i in range(panjang):
-            kombinasi = kombinasi * (panjang_nama - i)
-        jumlah += kombinasi
+    n = len(nama)
+    for r in range(1, max_length + 1):
+        jumlah += math.perm(n, r)
     return jumlah
 
 hasil = hitung_kombinasi(nama, max_length)
